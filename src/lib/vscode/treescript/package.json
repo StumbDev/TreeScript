@@ -12,13 +12,19 @@
     "contributes": {
         "languages": [{
             "id": "treescript",
-            "aliases": ["TreeScript", "treescript"],
-            "extensions": [".voi", ".cts"],
+            "aliases": [
+                "TreeScript",
+                "treescript"
+            ],
+            "extensions": [
+                ".voi",
+                ".ctscr"
+            ],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
             "language": "treescript",
-            "scopeName": "source.cts",
+            "scopeName": "source.ctscr",
             "path": "./syntaxes/treescript.tmLanguage.json"
         }],
         "fileIcons": {
@@ -26,5 +32,8 @@
             "*.cts": "./assents/icon.svg",
             "ctsconfig.json": "./assents/configfile.svg"
         }
+    },
+    "dependencies": {
+        "vsce": "^2.15.0"
     }
 }

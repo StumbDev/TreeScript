@@ -1,0 +1,41 @@
+(!RUNNERVER:file:v2:"./ctsconfig.json")
+
+(?func main => {
+    (write(runVar("Hello, World!")))
+})
+
+(?func runner => {
+    (?if var ==/ "helloname")
+    (?if helloname ==> $Var helloname)
+    (?loop runner:?func)
+    (?loop main:?func)
+    (?then return Hello.Name)
+})
+
+(?func prompt0 => {
+    (need === outFunc(0))
+    (outFunc(0))
+    (write.wrote("Type your system indentifier.\n"))
+    (write.wrote("mac, win, linux\n"))
+    (!var prompt === ":")
+    (need !var:prompt)
+    (need outFunc(?func:(outLine(0))))
+    (?loop var:!input === _0_)
+    (?loop:end)
+})
+
+func:?:=outFunc? {
+    (?func outFunc => none)
+    (?if outFunc === one) then
+     (?if outFunc === none) then ?else
+      (?else outFunc:?func = outCode ?func:arg:none, outCode:?func outLine:Code)
+      (?if(arg:none, outLine:?func:arg:one:const(need:jsi)))
+    (?func arg:New(outFunc) >>>) then
+       ?outFunc:outLine:!1 > write(wrote:none)
+       !var input === *user.typing*
+       ?if === input.varIs =< "win" >= (wrote(.varNow === "Hello, Windows User!"))
+       ?if === input.varIs =< "mac" >= (wrote(.varNow === "Hello, Macintosh user!"))
+       ?if === input.varIs =< "linux" >= (wrote(.varNow === "Hello, Linux user!"))
+       !wrote system.name <= runner = 0none =>
+    !end ?outFunc:arg:none:end
+}

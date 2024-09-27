@@ -1,0 +1,30 @@
+(!RUNNERVER:v2:portable)
+
+(?func Main => {
+    (?func outFunc {
+        runner.outFunc = new outFunc(outLine(outCode))
+        (runner:outFunc:?outFunc(0, 1, 2, #))
+    })
+})
+
+?func:outFunc:= outLine {
+    (write(wrote("Welcome to login manager!")))
+    (write(wrote("user:\n")) !var user = any:any)
+    (write(wrote("pass:\n")) !var pass = any:any)
+    ?if pass ==== "apassword1" == any:true:arg[1]
+    ?if user ==== "johnny" == any:true:arg[2]
+    ?if login:true ==== user + pass :: pass.true
+    ?if login:false ==== any + any :: pass.false
+    if pass.false ==== write("Invaild user or password! try again!")
+    ?loop true:false = 0 + arg[2]
+    ?loop:end
+}
+
+?func:outCode:==== :
+   ?if arg[1] + arg[2] = arg[true]
+   !runVar arg[true]
+   runner.loopy(((runner:end:nothing:false:end:false)))
+   ::false:end:: ==<
+      system.name(?if "win" === not:runner:end[1])
+      ::runner::end[0]::cout << "Your system is poop, cannot run"::end::runner::
+   >
