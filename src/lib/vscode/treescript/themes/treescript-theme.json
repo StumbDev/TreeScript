@@ -1,0 +1,54 @@
+{
+    "name": "TreeScript Theme",
+    "type": "light",
+    "colors": {
+        "editor.background": "#FFFFFF",
+        "editor.foreground": "#000000",
+        "editor.lineHighlightBackground": "#F0F0F0",
+        "editorCursor.foreground": "#FF0000"
+    },
+    "tokenColors": [{
+            "scope": "comment.treescript",
+            "settings": {
+                "foreground": "#75715E",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "string.quoted.double.treescript",
+            "settings": {
+                "foreground": "#E6DB74"
+            }
+        },
+        {
+            "scope": "keyword.control.treescript",
+            "settings": {
+                "foreground": "#66D9EF"
+            }
+        },
+        {
+            "scope": "variable.parameter.treescript",
+            "settings": {
+                "foreground": "#A6E22E"
+            }
+        },
+        {
+            "scope": "constant.numeric.treescript",
+            "settings": {
+                "foreground": "#F92672"
+            }
+        },
+        {
+            "scope": "keyword.operator.treescript",
+            "settings": {
+                "foreground": "#F92672"
+            }
+        },
+        {
+            "scope": "punctuation.treescript",
+            "settings": {
+                "foreground": "#F8F8F2"
+            }
+        }
+    ]
+}

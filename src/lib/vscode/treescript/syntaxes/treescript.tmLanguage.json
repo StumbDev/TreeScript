@@ -1,0 +1,44 @@
+{
+    "scopeName": "source.cts",
+    "patterns": [{
+            "name": "comment.line.double-slash.cts",
+            "match": "//.*$",
+            "captures": {
+                "0": {
+                    "name": "comment.cts"
+                }
+            }
+        },
+        {
+            "name": "string.quoted.double.cts",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [{
+                "name": "constant.character.escape.cts",
+                "match": "\\\\."
+            }]
+        },
+        {
+            "name": "keyword.control.cts",
+            "match": "\\b(?:if|else|func|return|export|for|while|switch)\\b"
+        },
+        {
+            "name": "variable.parameter.cts",
+            "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+        },
+        {
+            "name": "constant.numeric.cts",
+            "match": "\\b\\d+\\b"
+        },
+        {
+            "name": "keyword.operator.cts",
+            "match": "[+\\-*/=<>!]+"
+        },
+        {
+            "name": "punctuation.cts",
+            "match": "[{}()\\[\\];,]"
+        }
+    ],
+    "repository": {},
+    "scope": "source.cts"
+}

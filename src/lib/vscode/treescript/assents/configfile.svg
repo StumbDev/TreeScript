@@ -1,0 +1,25 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 64 64"
+    width="64"
+    height="64"
+    fill="#FFC107"
+>
+    <rect x="10" y="2" width="44" height="60" rx="4" ry="4" fill="#fff" />
+    <path
+        d="M38 2H10C8.9 2 8 2.9 8 4v56c0 1.1.9 2 2 2h44c1.1 0 2-.9 2-2V24L38 2z"
+        fill="#E0E0E0"
+    />
+    <path
+        d="M32 12h-8v8h8V12zM30 20h-6v6h6v-6z"
+        fill="#FFC107"
+    />
+    <path
+        d="M32 48c0-1.7-.2-3.2-.7-4.7l-3.8 2.2c-1.1-.7-2.3-1.2-3.7-1.2s-2.6.5-3.7 1.2l-3.8-2.2c-.5 1.5-.7 3-0.7 4.7 0 4.5 3.8 8.1 8.4 8.1s8.4-3.6 8.4-8.1z"
+        fill="#FFC107"
+    />
+    <path
+        d="M20 50h24v2H20v-2zM20 46h24v2H20v-2z"
+        fill="#FFC107"
+    />
+</svg>
