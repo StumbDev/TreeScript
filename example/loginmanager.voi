@@ -27,4 +27,20 @@
    ::false:end:: ==<
       system.name(?if "win" === not:runner:end[1])
       ::runner::end[0]::cout << "Your system is poop, cannot run"::end::runner::
-   >
+   >:voiend
+
+?func:unLoopCode:outCode:= {
+    ?if sloop.Execute()
+    !var UserLogin: = if:?[7]
+    !UserLogin == napDo
+    napDo.UserGreet("Welcome!")
+}
+
+(?Runner::timer() {
+    (iRunner.timer(runer.system.name(UserGreet.UserLogin.user)))
+    timer iRunner(end::)
+    system.rerun(return (all:outFunc))
+})
+
+(This.PRG() = LoginManager)
+(end::prg)

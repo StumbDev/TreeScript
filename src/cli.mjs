@@ -7,7 +7,7 @@ import shell from "shelljs";
 import chalk from 'chalk';
 import readline from 'readline'
 import prompt from "prompt";
-
+import executeTreeScript from "./lang";
 const program = new Command();
 
 // Function to run TreeScript code
@@ -28,6 +28,7 @@ program
         }
 
         const code = shell.cat(file).stdout;
+        executeTreeScript(code);
         runTreeScript(code);
     });
 
